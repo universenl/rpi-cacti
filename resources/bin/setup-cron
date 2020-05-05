@@ -1,0 +1,4 @@
+#!/bin/bash
+WWW_DIR=/var/www/html/cacti
+
+echo "*/5 * * * * /usr/local/bin/php /var/www/html/cacti/poller.php > /var/www/html/cacti/log/cron.log 2>&1" | crontab -
